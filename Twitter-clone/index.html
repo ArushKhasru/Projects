@@ -148,17 +148,20 @@
                                         <input id="postInput"
                                                 class="bg-black text-white w-full  h-7 my-5 text-xl outline-none"
                                                 type="text" placeholder="What is Happening?!">
+                                        <input type="file" id="imageInput" accept="image/*" class="hidden">
+                                        <div id="imagePreview" class="my-2"></div>
+
+                                        <div id="imagePreview" class="my-2"></div>
+
                                         <div class="text-blue-500 flex item-center w-full my-2 gap-3">
-                                                <span class="material-symbols-outlined">
-                                                        globe_asia
-                                                </span>
+                                                <span class="material-symbols-outlined">globe_asia</span>
                                                 <span class="font-bold">Everyone can reply</span>
                                         </div>
                                         <div class="h-[0.2px] w-[90%] bg-gray-400 my-3 "></div>
                                         <div class="flex justify-between">
 
                                                 <div class="blueicons text-blue-600 cursor-pointer flex gap-2">
-                                                        <span class="material-symbols-outlined">
+                                                        <span class="material-symbols-outlined " id="uploadBtn">
                                                                 image
                                                         </span>
                                                         <span class="material-symbols-outlined">
@@ -296,28 +299,34 @@
 
 
                         </div>
-                        <footer class="sticky bottom-0 bg-black backdrop-blur-3xl opacity-80 md:hidden">
-    <ul class="flex flex-row text-xl space-y-0.5 font-bold w-full justify-around">
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">home</span>
-        </li>
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">search</span>
-        </li>
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">planet</span>
-        </li>
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">notifications</span>
-        </li>
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">mail</span>
-        </li>
-        <li class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
-            <span class="text-3xl material-symbols-outlined">group</span>
-        </li>
-    </ul>
-</footer>
+                        <footer class="sticky bottom-[-1px]  bg-black backdrop-blur-3xl opacity-60 md:hidden">
+                                <ul class="flex flex-row text-xl space-y-0.5 font-bold w-full justify-around">
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">home</span>
+                                        </li>
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">search</span>
+                                        </li>
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">planet</span>
+                                        </li>
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">notifications</span>
+                                        </li>
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">mail</span>
+                                        </li>
+                                        <li
+                                                class="flex justify-center items-center hover:bg-gray-900 hover:cursor-pointer px-3 py-3 hover:rounded-full">
+                                                <span class="text-3xl material-symbols-outlined">group</span>
+                                        </li>
+                                </ul>
+                        </footer>
                 </div>
                 <div class="third w-full hidden md:block">
                         <div class="search m-3">
